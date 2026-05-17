@@ -12,7 +12,7 @@ export const Cart = () => {
             {cartItems.length === 0 ? <p>Koszyk jest pusty</p> : (
                 <ul>
                     {cartItems.map((item, index) => (
-                        <li key={index}>{item.name} - {item.price} PLN</li>
+                        <li key={item.id}>{item.name} - {item.price} PLN</li>
                     ))}
                 </ul>
             )}
